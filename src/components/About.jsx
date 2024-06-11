@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -47,7 +48,8 @@ const About = () => {
             </div>
             
           </div>
-          <button className='text-center text-sm mt-8  px-2 py-1 border rounded-xl bg-red-600 max-sm:mt-12 '>Look At My Projects &rarr;</button>
+          
+          <NavLink className={(e)=>{return e.isActive?"red":""}} to='/portfolio'><li className='list-none text-normal text-lg max-sm:text-sm'><button className='text-center text-sm mt-8  px-2 py-1 border rounded-xl bg-red-600 max-sm:mt-12 '>Look At My Projects &rarr;</button></li></NavLink>
 
       </div>
       </div>
