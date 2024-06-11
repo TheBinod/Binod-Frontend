@@ -28,7 +28,10 @@ const Contact = () => {
   }
 
   const handleSubmit = async() => {
-
+    userRef.current.value = ""
+    emailRef.current.value = ""
+    textRef.current.value = ""
+    
     if(userRef.current.value.length<3||emailRef.current.value.length<3||textRef.current.value.length<3){
 
     toast.error('Must Contain More Than 4 Characters', {
@@ -55,9 +58,7 @@ const Contact = () => {
       })
       await fetch("http://localhost:3000/", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...message,}) })
 
-    userRef.current.value = ""
-    emailRef.current.value = ""
-    textRef.current.value = ""
+
   }}
 
 

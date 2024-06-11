@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const About = () => {
   return (
     <>
-    <div className='bg-[#101820] h-[91vh] '>
+    <div className='bg-[#101820] '>
     <div className="helloworld flex items-center justify-center flex-col h-[9vh] bg-[#101820]">
          <div className="typewriter ">
         <h1 className='text-center text-xl '>Its All About Binod!</h1>
@@ -49,7 +49,7 @@ const About = () => {
             
           </div>
           
-          <NavLink className={(e)=>{return e.isActive?"red":""}} to='/portfolio'><li className='list-none text-normal text-lg max-sm:text-sm'><button className='text-center text-sm mt-8  px-2 py-1 border rounded-xl bg-red-600 max-sm:mt-12 '>Look At My Projects &rarr;</button></li></NavLink>
+          <NavLink className={(e)=>{return e.isActive?"red":""}} to='/portfolio'><li className='list-none text-normal text-lg max-sm:text-sm'><button className='text-center text-sm mt-8  px-2 py-1 border rounded-xl bg-red-600 max-sm:mt-12 mb-1 '>Look At My Projects &rarr;</button></li></NavLink>
 
       </div>
       </div>
